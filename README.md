@@ -120,3 +120,89 @@ In Rust, this simple program prints "Hello, world!" to the console, just like a 
 So, while Python and Rust have a lot in common, Rust gives you more control and flexibility, especially when it comes to performance and low-level programming. It's like Python's cool older sibling who's really good at everything!
 
 ---
+
+
+## Let's explore the Rust module system from the perspective of Python.
+
+## Modules in Python
+
+In Python, a module is a file containing Python definitions and statements. Modules allow you to organize your code into logical units, similar to how Rust's module system works.
+
+Here's how the Rust module system concepts translate to Python:
+
+### Crates in Rust vs. Packages in Python
+- In Rust, a **crate** is the smallest compilable unit of code. In Python, the equivalent is a **package**.
+- A Python package is a collection of Python modules, organized into a directory structure. This is similar to how a Rust crate can contain a hierarchy of modules.
+- Just like Rust crates, Python packages can be distributed and reused across different projects.
+
+### Modules in Rust vs. Modules in Python
+- In Rust, a **module** is a collection of related items (functions, structs, traits, etc.) that are grouped together.
+- In Python, a **module** is a single Python file that contains definitions and statements.
+- Both Rust and Python use the `mod` keyword to define modules, but the syntax and usage differ.
+
+### Paths in Rust vs. Imports in Python
+- In Rust, you use **paths** to access items within modules and crates.
+- In Python, you use **imports** to access modules and their contents.
+- The `use` keyword in Rust is similar to the `import` statement in Python, but the syntax and semantics differ.
+
+Here's an example to illustrate the differences:
+
+**Rust**
+```rust
+// Crate: my_crate
+mod utils {
+    pub fn do_something() {
+        println!("Doing something!");
+    }
+}
+
+mod app {
+    use crate::utils;
+
+    pub fn run() {
+        utils::do_something();
+    }
+}
+
+fn main() {
+    app::run();
+}
+```
+
+**Python**
+```python
+# Package: my_package
+# Module: utils.py
+def do_something():
+    print("Doing something!")
+
+# Module: app.py
+from my_package.utils import do_something
+
+def run():
+    do_something()
+
+if __name__ == "__main__":
+    run()
+```
+
+In the Rust example, we have a crate named `my_crate` with two modules: `utils` and `app`. The `utils` module exposes a `do_something()` function, which is then used in the `app` module. The `main` function calls the `run()` function from the `app` module.
+
+In the Python example, we have a package named `my_package` with two modules: `utils.py` and `app.py`. The `utils.py` module defines a `do_something()` function, which is then imported and used in the `app.py` module. The `if __name__ == "__main__":` block ensures that the `run()` function is executed when the `app.py` module is run directly.
+
+The key differences are:
+- Rust uses crates and modules, while Python uses packages and modules.
+- Rust uses the `mod` keyword to define modules, while Python uses the file system to organize modules.
+- Rust uses paths to access items, while Python uses imports.
+- Rust has explicit visibility control with the `pub` keyword, while Python relies on the file system and import statements.
+
+Overall, the Rust module system and the Python module system serve similar purposes of organizing code, but the specific syntax and implementation details differ between the two languages.
+
+Citations:
+[1] https://doc.rust-lang.org/rust-by-example/mod.html
+[2] https://dev.to/stevepryde/intro-to-rust-modules-3g8k
+[3] https://aloso.github.io/2021/03/28/module-system.html
+[4] https://www.sheshbabu.com/posts/rust-module-system/
+[5] https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/crates-and-modules.html
+
+---
