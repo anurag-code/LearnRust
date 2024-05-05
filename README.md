@@ -1,5 +1,11 @@
 # Learn Rust as a Python User
 
+----
+
+The playground is an IDE for Rust development that's available on the internet at https://play.rust-lang.org/
+
+----
+
 Let's look at Rust through the lens of Python.
 
 **Type safe:** \
