@@ -1,4 +1,4 @@
-# LearnRust
+# Learn Rust as a Python User
 
 Let's look at Rust through the lens of Python.
 
@@ -292,7 +292,7 @@ By understanding crates, modules, paths, and how to use external libraries, you'
 
 ---
 
-**Use Rust crates and libraries**
+**Use Rust crates and libraries**\
 The Rust Standard Library std contains reusable code for fundamental definitions and operations in Rust programs. This library has definitions for core data types like String and Vec<T>, operations for Rust primitives, code for commonly used macro functions, support for input and output actions, and many other areas of functionality.
 
 There are tens of thousands of libraries and third-party crates available to use in Rust programs most of which can be accessed through Rust's third-party crate repository crates.io. You'll learn later how to access these crates from your project, but for now here are some crates used in the programming exercises:
@@ -317,7 +317,7 @@ By default, the std library is available to all Rust crates. To access the reusa
 
 Let's explore how the Rust Cargo tool compares to project management in Python.
 
-## Project Management in Python
+### Project Management in Python
 
 In Python, there are a few common ways to manage projects and dependencies:
 
@@ -330,11 +330,11 @@ While these tools provide functionality similar to Rust's Cargo, the specific co
 
 ### Creating a New Project
 **Cargo**:
-```
+```rust
 cargo new my_project
 ```
 This command creates a new Rust project with the following structure:
-```
+```rust
 my_project/
 ├── Cargo.toml
 └── src/
@@ -360,18 +360,18 @@ extern crate serde;
 **Python**:
 To add a dependency, you can either:
 1. Add the package name and version to your `requirements.txt` file:
-   ```
+   ```python
    requests==2.28.1
    ```
    Then install the dependencies using `pip install -r requirements.txt`.
 2. Use a tool like `pip`, `pipenv`, or `poetry` to add the dependency directly:
-   ```
+   ```python
    pip install requests
    ```
 
 ### Building and Running the Project
 **Cargo**:
-```
+```rust
 cargo build  # Compile the project
 cargo run   # Build and run the project
 ```
@@ -381,28 +381,28 @@ Cargo will handle compiling the project, including any dependencies, and generat
 There is no single command to build and run a Python project. Typically, you would:
 1. Ensure your virtual environment is activated.
 2. Run the Python interpreter directly on your main script:
-   ```
+   ```python
    python my_project/main.py
    ```
    Or, if you've set up a `setup.py` file, you can use `python setup.py install` to install the project, and then run the installed script.
 
 ### Testing the Project
 **Cargo**:
-```
+```rust
 cargo test  # Run the project's tests
 ```
 Cargo's built-in testing framework makes it easy to write and run tests for your Rust project.
 
 **Python**:
 Python has several testing frameworks, such as `unittest`, `pytest`, and `doctest`. To run tests, you would typically use the framework's command-line tool:
-```
+```python
 pytest my_project/tests/
 ```
 or, if you've set up a `setup.py` file, you can use `python setup.py test`.
 
 ### Publishing the Project
 **Cargo**:
-```
+```rust
 cargo publish  # Publish the project to crates.io
 ```
 Cargo handles the entire process of publishing your Rust library or application to the central crates.io repository.
@@ -416,11 +416,11 @@ To publish a Python project, you would typically:
 
 Overall, while the specific commands and workflow differ, both Cargo and the various Python tools serve the same purpose of managing project dependencies, building, testing, and publishing your code. The Rust Cargo tool provides a more integrated and streamlined experience compared to the more fragmented approach in the Python ecosystem.
 
-Citations:
-[1] https://www.youtube.com/watch?v=WIB6xqdWMqk
-[2] https://www.programiz.com/rust/cargo
-[3] https://www.kevsrobots.com/learn/rust/13_cargo.html
-[4] https://blog.waleedkhan.name/rust-modules-for-python-users/
+Citations:\
+[1] https://www.youtube.com/watch?v=WIB6xqdWMqk \
+[2] https://www.programiz.com/rust/cargo \
+[3] https://www.kevsrobots.com/learn/rust/13_cargo.html \
+[4] https://blog.waleedkhan.name/rust-modules-for-python-users/ \
 [5] https://crates.io/crates/python-project-generator/0.3.0
 
 ---
@@ -469,4 +469,6 @@ Here's a breakdown of how Cargo helps you create and execute a basic Rust progra
 
 Cargo simplifies Rust development by offering a streamlined workflow for managing projects, dependencies, and various tasks. It automates many processes, allowing you to focus on writing clean and efficient Rust code.
 
-If you're a Python developer transitioning to Rust, Cargo will be a valuable companion in your journey!
+If you're a Python developer transitioning to Rust, Cargo will be a valuable companion in your journey! \
+
+---
