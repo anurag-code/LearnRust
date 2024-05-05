@@ -416,9 +416,11 @@ To publish a Python project, you would typically:
 
 Overall, while the specific commands and workflow differ, both Cargo and the various Python tools serve the same purpose of managing project dependencies, building, testing, and publishing your code. The Rust Cargo tool provides a more integrated and streamlined experience compared to the more fragmented approach in the Python ecosystem.
 
-Citations:
-[1] https://www.youtube.com/watch?v=WIB6xqdWMqk
-[2] https://www.programiz.com/rust/cargo
-[3] https://www.kevsrobots.com/learn/rust/13_cargo.html
-[4] https://blog.waleedkhan.name/rust-modules-for-python-users/
-[5] https://crates.io/crates/python-project-generator/0.3.0
+Citations:\
+[1] https://www.youtube.com/watch?v=WIB6xqdWMqk\
+[2] https://www.programiz.com/rust/cargo\
+[3] https://www.kevsrobots.com/learn/rust/13_cargo.html\
+[4] https://blog.waleedkhan.name/rust-modules-for-python-users/\
+[5] https://crates.io/crates/python-project-generator/0.3.0\
+
+---
