@@ -1,4 +1,4 @@
-# LearnRust
+# Learn Rust as a Python User
 
 Let's look at Rust through the lens of Python.
 
