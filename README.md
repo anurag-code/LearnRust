@@ -202,8 +202,6 @@ Citations:\
 [1] https://doc.rust-lang.org/rust-by-example/mod.html \
 [2] https://dev.to/stevepryde/intro-to-rust-modules-3g8k \
 [3] https://aloso.github.io/2021/03/28/module-system.html \
-[4] https://www.sheshbabu.com/posts/rust-module-system \
-[5] https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/crates-and-modules.html \
 
 ---
 
