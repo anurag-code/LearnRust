@@ -442,7 +442,7 @@ Imagine Cargo as a powerful tool that combines the functionality of several Pyth
 Here's a breakdown of how Cargo helps you create and execute a basic Rust program:
 
 1. **Project Creation:**
-   ```bash
+   ```rust
    cargo new my_project
    ```
    This creates a new directory named `my_project` with the essential files for your Rust project.
@@ -457,7 +457,7 @@ Here's a breakdown of how Cargo helps you create and execute a basic Rust progra
    ```
 
 3. **Building and Running:**
-   ```bash
+   ```rust
    cargo build
    cargo run
    ```
