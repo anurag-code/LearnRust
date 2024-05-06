@@ -1,5 +1,11 @@
 # Learn Rust as a Python User
 
+----
+
+The playground is an IDE for Rust development that's available on the internet at https://play.rust-lang.org/
+
+----
+
 Let's look at Rust through the lens of Python.
 
 **Type safe:** \
@@ -442,7 +448,7 @@ Imagine Cargo as a powerful tool that combines the functionality of several Pyth
 Here's a breakdown of how Cargo helps you create and execute a basic Rust program:
 
 1. **Project Creation:**
-   ```bash
+   ```rust
    cargo new my_project
    ```
    This creates a new directory named `my_project` with the essential files for your Rust project.
@@ -457,7 +463,7 @@ Here's a breakdown of how Cargo helps you create and execute a basic Rust progra
    ```
 
 3. **Building and Running:**
-   ```bash
+   ```rust
    cargo build
    cargo run
    ```
@@ -468,5 +474,12 @@ Here's a breakdown of how Cargo helps you create and execute a basic Rust progra
 Cargo simplifies Rust development by offering a streamlined workflow for managing projects, dependencies, and various tasks. It automates many processes, allowing you to focus on writing clean and efficient Rust code.
 
 If you're a Python developer transitioning to Rust, Cargo will be a valuable companion in your journey! \
+
+---
+
+
+---
+
+https://learn.microsoft.com/en-us/users/anuragpandey-5923/
 
 ---
