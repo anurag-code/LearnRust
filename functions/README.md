@@ -215,7 +215,7 @@ fn main() { // The function declaration is not indented
 
 ## The `todo!` macro
 
-When you work on exercises in the Rust modules, you'll notice the sample code often uses the `todo!` macro. A macro in Rust is a like a function that takes a variable number of input arguments. The `todo!` macro is used to identify unfinished code in the Rust program. The macro is helpful for prototyping, or when you want to indicate behavior that isn't complete.
+A macro in Rust is a like a function that takes a variable number of input arguments. The `todo!` macro is used to identify unfinished code in the Rust program. The macro is helpful for prototyping, or when you want to indicate behavior that isn't complete.
 
 Here's an example of how we use the `todo!` macro in the exercises:
 
