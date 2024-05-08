@@ -268,3 +268,79 @@ The output is:
 ```
 The first letter of the English alphabet is A and the last letter is Z.
 ```
+
+--- 
+
+## Macros in Rust
+
+---
+
+Macros in Rust are a powerful feature that allow you to write code that generates other code. They are a form of metaprogramming, which means you can write code that writes more code.
+
+In simple terms, macros in Rust are like functions, but instead of running at runtime, they run at compile-time. When you call a macro, the compiler expands it into the actual code that you want to generate.
+
+Here's a simple example of a macro in Rust:
+
+```rust
+macro_rules! say_hello {
+    () => {
+        println!("Hello, world!");
+    };
+}
+
+fn main() {
+    say_hello!();
+}
+```
+
+In this example, we define a macro called `say_hello` that simply prints "Hello, world!" when called. When you run this code, the `say_hello!()` call in the `main` function will be replaced by the `println!("Hello, world!")` statement during compilation.
+
+Macros can also take arguments, which allows you to customize the code they generate. For example:
+
+```rust
+macro_rules! print_message {
+    ($message:expr) => {
+        println!("{}", $message);
+    };
+}
+
+fn main() {
+    print_message!("I am learning Rust!");
+}
+```
+
+In this case, the `print_message` macro takes an argument `$message`, which is then used in the `println!` statement that the macro expands to.
+
+Macros are particularly useful when you need to generate repetitive code or create domain-specific languages (DSLs) within Rust. For example, the `vec!` macro is used to create a new vector with the specified elements:
+
+```rust
+let my_vec = vec![1, 2, 3, 4, 5];
+```
+
+This is much more concise than writing the equivalent code to create a new vector:
+
+```rust
+let my_vec = Vec::from([1, 2, 3, 4, 5]);
+```
+
+Macros can also be used for error handling, as in the case of the `try!` macro (which has been replaced by the `?` operator in newer versions of Rust):
+
+```rust
+fn do_something() -> Result<(), &'static str> {
+    try!(some_function_that_might_fail());
+    Ok(())
+}
+```
+
+Here, the `try!` macro is used to handle the `Result` returned by `some_function_that_might_fail()`. If the function returns an `Err`, the `try!` macro will return the error, effectively short-circuiting the function.
+
+Macros in Rust are more powerful and safer than macros in C, as they operate on the abstract syntax tree (AST) of the code, rather than just performing text substitution. This means that macros in Rust are less likely to introduce unexpected behavior or bugs.
+
+Overall, macros in Rust are a powerful tool for metaprogramming and code generation, allowing you to write more concise and expressive code.
+
+Citations:
+[1] https://doc.rust-lang.org/rust-by-example/macros.html
+[2] https://www.reddit.com/r/rust/comments/t0gogu/macros_in_rust/
+[3] https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/macros.html
+[4] https://blog.logrocket.com/macros-in-rust-a-tutorial-with-examples/
+[5] https://www.programiz.com/rust/macro
